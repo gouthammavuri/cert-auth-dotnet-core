@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateAuth.Client", "CertificateAuth.Client.csproj", "{CC0C4F38-4509-4DD3-838F-4AD492487427}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC0C4F38-4509-4DD3-838F-4AD492487427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0C4F38-4509-4DD3-838F-4AD492487427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0C4F38-4509-4DD3-838F-4AD492487427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0C4F38-4509-4DD3-838F-4AD492487427}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7D643DC-0AF6-4999-9946-B4EDE15DA249}
+	EndGlobalSection
+EndGlobal
