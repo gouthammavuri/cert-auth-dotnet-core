@@ -67,6 +67,10 @@ namespace CertificateAuth.Web
                 });
             services.AddAuthorization();
             services.AddControllers();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CertificateAuth.Web", Version = "v1" });
@@ -89,7 +93,7 @@ namespace CertificateAuth.Web
             app.UseCertificateForwarding();
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
