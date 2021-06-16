@@ -18,7 +18,6 @@ namespace CertificateAuth.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>()
-                        .UseKestrel()
                         .UseContentRoot(Directory.GetCurrentDirectory())
                         .UseIISIntegration();
                 });

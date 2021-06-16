@@ -2,6 +2,10 @@
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "https://localhost/CertificateAuth",
+      "sslPort": 0
+    },
     "iisExpress": {
       "applicationUrl": "http://localhost:42923",
       "sslPort": 44364
@@ -15,8 +19,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "ancmHostingModel": "OutOfProcess"
+      }
     },
     "CertificateAuth.Web": {
       "commandName": "Project",
@@ -27,6 +30,14 @@
       },
       "dotnetRunMessages": "true",
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "IIS": {
+      "commandName": "IIS",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

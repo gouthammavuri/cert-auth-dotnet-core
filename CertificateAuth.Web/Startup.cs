@@ -74,6 +74,7 @@ namespace CertificateAuth.Web
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CertificateAuth.Web", Version = "v1" });
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
         }
 
@@ -86,7 +87,7 @@ namespace CertificateAuth.Web
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CertificateAuth.Web v1"));
             }
-
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
