@@ -20,7 +20,7 @@ namespace CertificateAuth.Client
 
                 var request = new HttpRequestMessage()
                 {
-                    RequestUri = new Uri("https://localhost/CertificateAuth/WeatherForecast"),
+                    RequestUri = new Uri("https://localhost:44364/WeatherForecast"),
                     Method = HttpMethod.Get,
                 };
                 request.Headers.Add("X-SSL-CERT", cert.GetRawCertDataString());

@@ -104,7 +104,9 @@ namespace CertificateAuth.Web
         private bool ValidateCertificate(X509Certificate2 clientCertificate)
         {
             var cert = new X509Certificate2(Path.Combine("./Certificates/gouthammavuri.pfx"), "password");
-            if (clientCertificate.Thumbprint == cert.Thumbprint)
+            if (clientCertificate.Thumbprint == cert.Thumbprint 
+                && clientCertificate.Issuer == cert.Issuer
+                && clientCertificate.SerialNumber == cert.SerialNumber)
             {
                 return true;
             }
